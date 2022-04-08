@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <section>
+        <h3>Formulario de Registro</h3>
+
+        <form action="">
+
+            <label for="nombre">ingrese su nombre
+                <input type="text" id="nombre" placeholder="coloque su nombre">
+
+            </label ><br> <br>
+
+            <label for="apellido">ingrese su apellido
+                <input type="text" id="apellido" placeholder="coloque su apellido">
+            </label> <br> <br>
+
+            <label for="correo">coloque su correo 
+                <input type="email" id="correo" placeholder="coloque su correo ">
+            </label> <br> <br>
+
+            <label> ¿Que habitacion Prefiere? <br>
+                <input type="checkbox" name="Chica" value=""> Chica <br>
+                <input type="checkbox" name="Mediana" value="">Mediana <br>
+                <input type="checkbox" name="Grande" value="">Grande <br>
+            </label> <br> <br>
+
+            <label> ¿Desea servicio a la habitacion? <br>
+                <input type="radio" name="habitacion" value="si"> Afirmativo <br>
+                <input type="radio" name="habitacion" value="no"> Negativo <br>
+            </label> <br>
+
+            <label for="pais"> Selecciona pais de procedencia
+                <select name="pais origen" id="pais">
+                    <option value="" disabled selected>Pais</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Bolivia">Bolivia</option> <br>
+                </select>
+            </label> <br> <br>
+
+            <label>
+                <textarea name="texto" maxlength="300" rows="10" cols="25"></textarea>
+            </label> <br> <br>
+
+            <label>
+                <input type="button" value="Boton">
+                <input type="reset" value="Reseteador">
+                <button type="submit">Enviar</button>
+            </label> <br> <br>
+        </form>
+    </section>
+</body>
+</html>
