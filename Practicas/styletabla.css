@@ -1,7 +1,8 @@
 body {
     background-color: rgb(255, 255, 255);
     background-image: url(./bandera-españa.jpeg);
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 
    }
 table {
