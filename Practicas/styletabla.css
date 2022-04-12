@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url(./bandera-españa.jpeg);
+    background-repeat: repeat-x;
+
+   }
+table {
+    border: black 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    empty-cells: show;
+    border-spacing: 2px;
+    
+}   
+caption {
+    caption-side: top;
+    text-align: center;
+    background-color: rgba(5, 5, 0, 0.829);
+    
+}
+.Parrafo2 {
+    color: rgb(9, 10, 8);
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-shadow: gray 6px 0;
+    text-transform: uppercase;
+}    
+.Parrafo3 {
+    color: rgb(250, 250, 250);
+    text-align: justify;
+}
