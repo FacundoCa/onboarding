@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.Parrafo1 {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: dashed;
+}
+.nav-bar {
+    margin-top: 10px;
+    list-style: none;
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+.list-nav-bar {
+    display: inline-block;
+    padding: 10px;
+    
+}
+.list-nav-bar a {
+    color: yellow;
+    text-decoration: none;
+}
+.list-nav-bar a:hover {
+    color: black;
+
+}
+.list-nav-bar a:active {
+    color: yellow;
+}
+.list-nav-bar a::after {
+    content: " | ";
+}
