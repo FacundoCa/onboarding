@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62,5%;
+    background-image: url(./imagen/imagen1.webp);
+    background-size: cover;
+}
+body {
+    font-size: 1.6rem;
+}
+.Parrafo1 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: white;
+    background-color: black;
+}
+.nav-bar {
+    margin-top: 10px;
+    list-style: none;
+    background-color: black;
+}
+.list-nav-bar {
+    display: inline-block;
+    padding-left: 10px;
+}
+.list-nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+.list-nav-bar a:hover {
+    color: blue;
+}
+.list-nav-bar a:active {
+    color: white;
+}
+.list-nav-bar a:after {
+    content: " | ";
+}
