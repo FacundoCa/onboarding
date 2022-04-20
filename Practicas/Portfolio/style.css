@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@100 & display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +8,14 @@
 html {
     font-size: 62,5%;
 }
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
 .wrapper {
     width: 100vw;
     height: 100vw;
-    background-color: #29BF8F;
+    background-color: #022a5eb9;
     color: white;
 }
 .navbar {
@@ -45,14 +51,28 @@ h1 {
     font-size: 3.0rem;
 }
 span {
-    color: red;
+    color: #1CFAD9;
 }
 .download-cv {
     padding: 10px 20px;
-    background-color: red;
+    background-color: #1CFAD9;
     border: none;
     border-radius: 20px;
     margin-top: 10px;
     cursor: pointer;
-    box-shadow: 1px 3px 11px -5px rgba(red, green, blue, alpha);
+    box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, -69);
+}
+.download-cv:hover {
+    background-color: white;
+    box-shadow: none;
+}
+.main img {
+    width: 350px;
+    border: 7px solid #1CFAD9;
+    height: 520px;
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(10, 1fe);
+    width: 100vw;
 }
