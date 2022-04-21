@@ -3,14 +3,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 } 
 html {
     font-size: 62,5%;
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 .wrapper {
     width: 100vw;
@@ -22,6 +21,10 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 2.0rem;
+}
+.brand {
+    font-size: 2.0rem;
+    color: #1CFAD9;
 }
 .menu {
     display: flex;
@@ -42,7 +45,7 @@ body {
 .main {
     margin: 0 auto;
     width: 80vw;
-    height: 8.0rem;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
@@ -71,8 +74,10 @@ span {
     border: 7px solid #1CFAD9;
     height: 520px;
 }
-.about {
+.abaut {
     display: grid;
-    grid-template-columns: repeat(10, 1fe);
+    grid-template-columns: repeat(2,1fr);
     width: 100vw;
 }
+
+
