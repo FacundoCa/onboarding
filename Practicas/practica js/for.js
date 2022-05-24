@@ -13,14 +13,11 @@ const customers = [
 
 let result = [];
 for (let i = 0; i < customers.length; i++) {
-    const customers = customers(i);
+    const customers = customers[i];
     if (customers.age > 30) {
         result.push(customers.name);
-    }
+    };
 
 };
 
 console.log(result);
-
-
-
