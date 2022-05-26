@@ -5,6 +5,9 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+body{
+    background-color: rgb(33, 23, 23);
+}
 header{
     position: fixed;
     top: 0;
@@ -75,7 +78,96 @@ header{
 }
 .container-cover{
     width: 100%;
-    height: 800px;
+    height: 450px;
     position: relative;
     top: 80px;
+    background-image: url(./imagenes/httpsi.blogs.esaa91a3cine-1366_2000.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-info-cover {
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-cover:before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background: rgb(161, 15, 15);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 40%;
+
+}
+.container-info-cover h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+.container-info-cover p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    z-index: 2;
+}
+.container-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    margin: 40px;
+    position: relative;
+    max-width: 250px;
+    max-height: 350px;
+    box-shadow: 0 40px 60px -6px;
+}
+.card-title{
+    display: block;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(161, 15, 15);
+    padding: 2%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.card img{
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+.card-desc{
+    display: block;
+    font-size: 10px;
+    position: absolute;
+    height: 0;
+    top: 0;
+    opacity: 0;
+    padding: 18px 8%;
+    background-color: white;
+    overflow-y: scroll;
+    transition: 0.8s ease;
+}
+.card:hover .card-desc{
+    opacity: 1;
+    height: 100%;
 }
