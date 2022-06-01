@@ -13,28 +13,17 @@
       crossorigin="anonymous"
     />
 </head>
+
 <body>
     <header>
         <div class="header-content">
             <div class="logo">
                 <h1>PLAY<span>PELIS</span></h1>
             </div>
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li class="menu-selected"><a href="#" class="text-menu-selected">Inicio</a></li>
-                        <li><a href="#">Estreno</a></li>
-                        <li><a href="#">Categoria</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="seach">
-                <label for="Buscar" class="main-seach" >
-                    <input type="text" name="Buscar" id="Buscar" placeholder="Coloque la Pelicula">
-                    <input type="button" value="Buscar">
-                    <input type="reset" value="Borrar">
-                </label>
-            </div>
+            <form id="form" class="container-search">
+                <input type="text" placeholder="search" id="search"
+                class="search">
+            </form>       
         </div>
     </header>
     <section class="container-cover">
@@ -42,28 +31,38 @@
             <h1>¡Bienvenido a tu cine en casa!</h1>
             <p>Donde encontras las mejores y ultimas peliculas a un solo click, y podras disfrutarlas desde tu casa</p>
         </article>
-        <article class="container-cards">
-            <div class="cards">
-                <div class="card">
-                    <h2 class="card-title">Rapido y furioso 1</h2>
-                    <h3 class="card-sub">Accion, aventura, suspenso</h3>
-                    <img src="./imagenes/rapido y furioso 1.jpeg" alt="Rapido y Furioso">
-                    <p class="card-desc">En la cuidad de Los Ángeles, el corredor de autos y ex convicto Dominic Toretto se vuelve sospechoso ante la policía de ser el responsable de una serie de robos a trailer llenos de costosos artefactos electrónicos, que se llevan a cabo de noche en la carretera. El oficial Brian O’Conner debe de meterse de infiltrado en el mundo de las carreras ilegales, y específicamente en el grupo de confianza de Toretto, para obtener pruebas de que es culpable y apresarlo.</p>
+        <article class="container-main">
+            <main id="main">
+                <div class="movie">
+                    <img src="./imagenes/rapido y furioso 1.jpeg" alt="">
+                    <div class="movie-info">
+                        <h3>Movie Title</h3>
+                    </div>
+                    <div class="overview">
+                        aca va la overview de la pekicula
+                    </div>
+                    <div class="genero">
+                        aca va el genero de la pelicula 
+                    </div>
                 </div>
-                <div class="card">
-                    <h2 class="card-title">Rapido y furioso 1</h2>
-                    <h3 class="card-sub">Accion, aventura, suspenso</h3>
-                    <img src="./imagenes/rapido y furioso 1.jpeg" alt="Rapido y Furioso">
-                    <p class="card-desc">En la cuidad de Los Ángeles, el corredor de autos y ex convicto Dominic Toretto se vuelve sospechoso ante la policía de ser el responsable de una serie de robos a trailer llenos de costosos artefactos electrónicos, que se llevan a cabo de noche en la carretera. El oficial Brian O’Conner debe de meterse de infiltrado en el mundo de las carreras ilegales, y específicamente en el grupo de confianza de Toretto, para obtener pruebas de que es culpable y apresarlo.</p>
+                <div class="movie">
+                    <img src="./imagenes/Harry Potter y la piedra filosofal 1.jpg" alt="">
+                    <div class="movie-info">
+                        <h3>Movie Title</h3>
+                    </div>
+                    <div class="overview">
+                        aca va la overview de la pekicula
+                    </div>
+                    <div class="genero">
+                        aca va el genero de la pelicula 
+                    </div>
                 </div>
-                <div class="card">
-                    <h2 class="card-title">Rapido y furioso 1</h2>
-                    <h3 class="card-sub">Accion, aventura, suspenso</h3>
-                    <img src="./imagenes/rapido y furioso 1.jpeg" alt="Rapido y Furioso">
-                    <p class="card-desc">En la cuidad de Los Ángeles, el corredor de autos y ex convicto Dominic Toretto se vuelve sospechoso ante la policía de ser el responsable de una serie de robos a trailer llenos de costosos artefactos electrónicos, que se llevan a cabo de noche en la carretera. El oficial Brian O’Conner debe de meterse de infiltrado en el mundo de las carreras ilegales, y específicamente en el grupo de confianza de Toretto, para obtener pruebas de que es culpable y apresarlo.</p>
-                </div>
-            </div>
+            </main>
+            <script src="./main.js"></script>
         </article>
+        
     </section>
+    
+
 </body>
 </html>
