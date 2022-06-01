@@ -33,7 +33,7 @@ function showMovies(data) {
             <h3>${title}</h3>
         </div>
         <div class="overview">
-            <h3>Descripció</h3>
+            <h3>Descripción</h3>
             ${overview}
         </div>        
         

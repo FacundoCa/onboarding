@@ -35,7 +35,7 @@ header{
     align-items: center;
 }
 .logo span{
-    color: red;
+    color: rgb(255, 0, 0);
 }
 form{
     display: flex;
@@ -43,12 +43,12 @@ form{
     align-items: center;
 }
 .search{
-    background-color: rgb(249, 249, 249);
+    background-color: rgb(255, 0, 0);
     border: 2px solid red;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     font-size: 1rem;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-family: inherit;
 }
 
@@ -144,7 +144,7 @@ main{
 
 .overview{
     display: block;
-    font-size: 10px;
+    font-size: 13px;
     position: absolute;
     height: 0;
     top: 0;
@@ -159,3 +159,6 @@ main{
     opacity: 1;
     height: 100%;
 }
+ .overview h3{
+     font-size: 18px;
+ }
