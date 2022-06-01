@@ -5,20 +5,23 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+
 body{
     background-color: rgb(33, 23, 23);
+    
 }
+
 header{
-    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    background: #fff;
+    background: rgb(255, 255, 255);
     box-shadow: 0 4px 25px -22px black;
-    z-index: 2;
+    z-index: 3;
 }
+
 .header-content{
     max-width: 1200px;
     margin: auto;
@@ -34,55 +37,27 @@ header{
 .logo span{
     color: red;
 }
-.menu{
-    height: 80px;
-}
-.menu nav{
-    height: 100%;
-}
-.menu nav ul{
-    height: 100%;
-    list-style: none;
-    display: flex;
-}
-.menu nav ul li{
-    height: 100%;
-    margin: 0px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.menu-selected:before{
-    content: "";
-    width: 100%;
-    height: 3px;
-    background: rgb(255, 0, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.menu nav ul li a{
-    color: black;
-    transition: color 800ms;
-}
-.menu nav ul li a:hover{
-    color: rgb(255, 0, 0);
-}
-.menu .text-menu-selected{
-    color: rgb(0, 0, 0);
-}
-.container-search{
+form{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.search{
+    background-color: rgb(249, 249, 249);
+    border: 2px solid red;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color: #fff;
+    font-family: inherit;
+}
+
 .container-cover{
     width: 100%;
     height: 450px;
     position: relative;
     top: 80px;
-    background-image: url(./imagenes/httpsi.blogs.esaa91a3cine-1366_2000.jpg.jpg);
+    background-image: url(./httpsi.blogs.esaa91a3cine-1366_2000.jpg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,7 +81,6 @@ header{
     top: 0;
     left: 0;
     opacity: 40%;
-
 }
 .container-info-cover h1{
     font-size: 50px;
@@ -128,12 +102,14 @@ header{
     align-items: center;
     flex-direction: column;
 }
+
 main{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .movie{
     margin: 40px;
     position: relative;
@@ -141,6 +117,15 @@ main{
     max-height: 350px;
     box-shadow: 0 40px 60px -6px;
 }
+
+.movie img{
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+
 .movie-info{
     display: block;
     text-align: center;
@@ -152,13 +137,11 @@ main{
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 }
-.movie img{
-    width: 100%;
-    height: 98%;
-    object-fit: cover;
-    display: block;
-    position: relative;
+
+.movie-info h3{
+    margin-top: 0;
 }
+
 .overview{
     display: block;
     font-size: 10px;
@@ -171,6 +154,7 @@ main{
     overflow-y: scroll;
     transition: 0.8s ease;
 }
+
 .movie:hover .overview{
     opacity: 1;
     height: 100%;
