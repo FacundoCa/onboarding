@@ -19,7 +19,6 @@ function getMovies(url) {
 }
 
 
-
 function showMovies(data) {
     main.innerHTML = '';
 
