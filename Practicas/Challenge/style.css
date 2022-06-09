@@ -39,7 +39,8 @@ header{
 }
 form{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 200px;
     align-items: center;
 }
 .search{
@@ -50,6 +51,14 @@ form{
     font-size: 1rem;
     color: rgb(0, 0, 0);
     font-family: inherit;
+}
+.reset{
+    background-color: red;
+    border: 2px solid red;
+    padding: 0.3rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+
 }
 
 .container-cover{

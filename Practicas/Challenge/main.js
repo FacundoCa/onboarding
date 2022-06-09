@@ -8,6 +8,7 @@ const searchURL = BASE_URL + '/search/movie?'+ API_KEY;
 const main = document.getElementById('main');
 const form = document.getElementById('form');
 const search = document.getElementById('search');
+const reset = document.getElementById('reset')
 getMovies(API_URL);
 
 function getMovies(url) {
@@ -16,7 +17,6 @@ function getMovies(url) {
         showMovies(data.results);
     })
 }
-
 
 
 
@@ -43,6 +43,11 @@ function showMovies(data) {
     })
 }
 
+reset.addEventListener("click", () => {
+    main.innerHTML = "";
+});
+
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -54,4 +59,3 @@ form.addEventListener('submit', (e) => {
         getMovies(API_URL);
     }
 })
-
