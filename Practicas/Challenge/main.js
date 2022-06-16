@@ -45,6 +45,9 @@ function showMovies(data) {
 
 reset.addEventListener("click", () => {
     main.innerHTML = "";
+
+
+        main.appendChild(movieEl);
     
 });
 

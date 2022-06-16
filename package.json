@@ -1,0 +1,24 @@
+{
+  "name": "onboarding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacundoCa/onboarding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FacundoCa/onboarding/issues"
+  },
+  "homepage": "https://github.com/FacundoCa/onboarding#readme",
+  "dependencies": {
+    "typescript": "^4.7.3"
+  }
+}
