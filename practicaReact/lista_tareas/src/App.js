@@ -1,29 +1,7 @@
 import React, {Component} from 'react'
 import './App.css';
+import TodoList from './components/TodoList';
 
-class TodoList extends Component {
-
-  render () {
-    const {todos, toggleTodo, deleteTodo} = this.props;
-    return todos.map(
-      (todo, index) => {
-        return (
-            <li  key={todo.title}>
-    
-              <span className={`title-tarea ${todo.completed ?
-                "completed" : " "}`}>{todo.title}</span>
-              <span role="img" area-aria-label="emoji" 
-              className='icon-tarea' onClick={toggleTodo}
-               data-index={index}>🆗</span>
-              <span role="img" area-aria-label="emoji" 
-              className='icon-tarea' onClick={deleteTodo}
-               data-index={index}>❌</span>
-            </li>
-        )
-      }
-    )
-  }
-}
 
 class App extends Component {
   state = {
